@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>v-for y v-if</title>
+</head>
+
+<body>
+    <div id="ejemplo2">
+        <h1>{{titulo}}</h1>
+        <!-- Enlace bidireccional -->
+        <input type="text" v-model="nuevaFruta">
+        <!-- <button v-on:click="agregarFruta">Agregar fruta</button> -->
+        <button @click="agregarFruta">Agregar fruta</button>
+        <ul>
+            <li v-for="fruta of frutas">
+                {{fruta.cantidad}} - {{fruta.nombre}}
+                <button @click=fruta.cantidad++>+</button>
+                <span v-if="fruta.cantidad===0"> - Sin Stock</span>
+            </li>
+        </ul>
+        <h4>Total: {{sumarFrutas}}</h4>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="v-for-v-if-v-model-v-on-v-bind.js"></script>
+</body>
+
+</html>
