@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Formulario</title>
+</head>
+<body>
+    <form action="#" method="POST" target="_blank">
+        <div>
+            <label for="fname">Nombre: </label><input type="text" id="fname">
+        </div>
+        <div>
+            <label for="flast">Apellido: </label><input type="text" id="flast" value="Ingrese su apellido...">
+        </div>
+        <div>
+            <label for="fpass">Contraseña: </label><input type="password" id="fpass" name="fpass" size="25" maxlength="8">
+        </div>
+        <div>
+            <label for="fturno">Turno: </label>
+            <select id="fturno" name="fturno">
+                <option>Mañana</option>
+                <option>Tarde</option>
+                <option>Vespertino</option>
+                </select>
+        </div>
+        <div>
+            <label for="fopcion">Opciones múltiples: </label>
+            <input type="checkbox" name="fopcion" value="1">Opción 1
+            <input type="checkbox" name="fopcion" value="2">Opción 2
+            <input type="checkbox" name="fopcion" value="3">Opción 3
+            <input type="checkbox" name="fopcion" value="4">Opción 4
+        </div>
+        <div>
+            <label for="fradio">Opciones únicas: </label>
+            <input type="radio" name="fradio" value="a">Opción A
+            <input type="radio" name="fradio" value="b">Opción B
+            <input type="radio" name="fradio" value="c">Opción C
+            <input type="radio" name="fradio" value="d">Opción D
+        </div>
+
+        <input type="submit" value="ENVIAR">
+        <input type="reset" value="BORRAR">
+        </form>
+</body>
+</html>
