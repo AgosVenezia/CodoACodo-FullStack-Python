@@ -1,0 +1,33 @@
+.padre { 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 10px;
+}
+
+.header, .articulo, .izquierda, .derecha, .footer{ 
+    flex-grow: 1;
+    flex-basis: 100%;
+    padding: 10px;
+}
+
+@media all and (min-width: 600px){ 
+    .aside { 
+        flex: 1 1 auto;
+    }
+}
+
+@media all and (min-width: 800px){ 
+    .header{flex: 2 0;}
+    .articulo{order: 1;}
+    .izquierda{order: 2;}
+    .derecha{order: 3;}
+    .footer{order: 4;}
+}
+
+.header{background: #581845;}
+.articulo{background: #FFC300;}
+.izquierda{background: #900C3F;}
+.derecha{background: #C70039;}
+.footer{background: #DAF7A6;}

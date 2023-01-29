@@ -1,0 +1,42 @@
+/* Selector universal */
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box; /*por defecto content-box*/
+}
+
+div {
+    height: 100px;
+    background-color: gray;
+    margin: 50px 10px;
+    padding: 5px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+P {
+    background-color: red;
+}
+
+div p {
+    background-color: inherit;
+}
+
+div > p {
+    background-color: blueviolet;
+}
+
+.advertencia {
+    background-color: pink;
+    color: red;
+    font-weight: bold;
+    width: 50vw;
+}
+
+#bordes {
+    /* border: blue dotted 5px */
+    border-color: blue;
+    border-style: none;
+    border-width: 5px;
+    border-bottom-style: solid;
+}

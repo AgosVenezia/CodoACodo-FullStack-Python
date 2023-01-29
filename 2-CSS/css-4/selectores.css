@@ -1,0 +1,48 @@
+/* Hoja de estilos externa */
+/* Regla de estilo: selector, propiedad, valor. Ejemplo: h1 { color: orange; }  */
+
+/* Selectores universal */
+/* Elimina márgenes y rellenos de todos los elementos de un documento HTML.
+   El selector universal puede ser muy útil en algunos casos para resetear ciertas propiedades de todo un
+   documento */
+* {
+    margin: 0; /* margin establece el margen para los cuatro lados */
+    padding: 0; /* padding establece el espacio de relleno */
+}
+
+/* Selectores de tipo */
+p {
+    color:red;
+    font-size: 130%;
+}
+
+/* Selectores de ID */
+#intro {
+    color: white;
+    background-color: violet;
+}
+
+/* Selectores de clase */
+.first {
+    font-size: 200%;
+}
+
+/* Selectores descendientes */
+/* Todos los p contenidos por un aside (directo o no) */
+aside p {
+    color: green;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Selectores de hijos */
+/* Hijo directo > */
+p > strong {
+    color:black;
+}
+
+/* Selectores de hijos */
+/* Hijo NO directo * */
+p * strong {
+    color:green;
+}

@@ -1,0 +1,20 @@
+div { 
+    border: 5px solid green;
+    background-color: greenyellow;
+    text-align: center;
+}
+
+h1 {
+    color: gray;
+    background-color: rgba(255, 0, 0, 0.89);
+}
+
+span {
+  font-style: italic;
+  color: blueviolet;
+}
+
+.advertencia {
+    border: 5px dotted palevioletred;
+    background-color: #FA8072;
+  }

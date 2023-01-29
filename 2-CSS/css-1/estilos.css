@@ -1,0 +1,11 @@
+span {
+    background-color: red;
+    border: 1px solid black;
+    /* display: block; */
+}
+
+div {
+    background-color: blue;
+    border: 2px solid black;
+    width: 30%;
+}

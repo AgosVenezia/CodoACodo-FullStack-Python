@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MQR</title>
+    <style>
+        * { 
+            box-sizing: border-box;
+        }
+
+        body { 
+            font-family: Arial;
+            margin: 0;
+        }
+
+        .header { 
+            padding: 60px;
+            text-align: center;
+            background: green;
+            color: white;
+        }
+
+        .navbar { 
+            display: flex;
+            background-color: black;
+        }
+
+        .navbar a { 
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .navbar a:hover { 
+            background-color: antiquewhite;
+            color: black;
+        }
+
+        .row { 
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .side { 
+            flex: 30%;
+            background-color: antiquewhite;
+            padding: 20px;
+        }
+
+        .main {
+            flex: 70%;
+            background-color: white;
+            padding: 20px;
+        }
+
+        .fakeimg { 
+            background-color: grey;
+            width: 100%;
+            padding: 20px;
+        }
+
+        .footer { 
+            padding: 20px;
+            text-align: center;
+            background: white;
+        }
+
+
+        @media (max-width: 700px){ 
+        .row,
+        .navbar { 
+        flex-direction: column;
+    }
+}
+    </style>
+</head>
+<body>
+    <div style="background:yellow; padding: 5px">
+        <h4 style="text-align:center">Resize the browser...</h4>
+    </div>
+
+    <div class="header">
+        <h1>My Website</h1>
+        <p>With a <b>Flexible</b>layout.</p>
+    </div>
+
+    <div class="navbar">
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+    </div>
+
+    <div class="row">
+        <div class="side">
+            <h2>About Me</h2>
+            <h5>Photo of me:</h5>
+            <div class="fakeimg" style="height:200px;">Image</div>
+            <p>Some text: Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ipsum tenetur, molestias quasi nostrum, omnis dolor soluta illum eaque voluptatem maiores earum distinctio deleniti suscipit impedit, accusantium doloremque debitis consectetur?</p>
+            <h3>More text</h3>
+            <p>Lorem blablablabla</p>
+            <div class="fakeimg" style="height:60px;">Image</div><br>
+            <div class="fakeimg" style="height:60px;">Image</div><br>
+            <div class="fakeimg" style="height:60px;">Image</div>
+        </div>
+
+        <div class="main">
+            <h2>TITLE HEADING</h2>
+            <h5>Title description</h5>
+            <div class="fakeimg" style="height:200px;">Image</div>
+            <p>Some text</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid fuga optio consequuntur sit praesentium cum, maxime tenetur doloribus voluptate. Aut vel laborum accusantium cumque harum autem deleniti aspernatur illo itaque.</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h2>Footer</h2>
+    </div>
+</body>
+</html>
