@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Case</title>
+    <script>
+// Alternativa múltiple: switch case
+// https://www.w3schools.com/js/js_switch.asp
+// Ejemplo: menú de opciones
+console.clear();
+console.log("Menu de opciones:");
+console.log("1. Abrir");
+console.log("2. Guardar");
+console.log("3. Salir");
+opt= parseInt(prompt("Ingrese una opción (1-3):"));
+switch(opt) {
+    case 1:
+        console.log("Seleccionó la opción 1.")
+        break;
+    case 2:
+        console.log("Seleccionó la opción 2.")
+        break;
+    case 3:
+        console.log("Seleccionó la opción 3.")
+        break; //Permite salir de la estructura
+    default: 
+        console.log("Debe elegir una opción válida (1-3).")
+}
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
